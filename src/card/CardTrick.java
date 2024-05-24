@@ -34,6 +34,11 @@ public class CardTrick {
             magicHand[i] = c;
             System.out.println(c.getSuit() + " " + c.getValue());
         }
+        / Adding hardcoded luckyCard
+        Card luckyCard = new Card();
+        luckyCard.setValue(7); // Choose any value
+        luckyCard.setSuit("Hearts"); // Choose any suit
+        System.out.println("The lucky card is: " + luckyCard.getValue() + " of " + luckyCard.getSuit());
 
         // Asking user for card value and suit
         System.out.println("Enter a card value (1-13): ");
